@@ -37,7 +37,7 @@ function App() {
             <button className='app__form-btn'>Search</button>
           </form>
           {
-            hasError ?
+            hasError || !+inputValue || +inputValue > 126 ?
             <h2>💢Hey! you must provide an id from 1 to 126😫</h2>
             :
             <>
@@ -46,7 +46,7 @@ function App() {
                 />
                 <div className='app__container'>
                   {
-                    location?.residents.map((character) => (
+                    location?.residents?.map((character) => (
                       <ResidentCard 
                       key={character}
                       info={character} 

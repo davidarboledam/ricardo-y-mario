@@ -9,7 +9,7 @@ const LocationCard = ({info}) => {
         <ul className="location__list">
             <li className="location__item"><span>Type: </span><span>{info?.type}</span></li>
             <li className="location__item"><span>Dimesion: </span><span>{info?.dimension}</span></li>
-            <li className="location__item"><span>Population: </span><span>{info?.residents.length }</span></li>
+            <li className="location__item"><span>Population: </span><span>{info?.residents?.length}</span></li>
         </ul>
     </article>
   )

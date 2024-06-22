@@ -36,6 +36,7 @@ button{
 }
 /*App*/
 .app{
+    min-height: 100vh;
     background-color: #05292E;
     display:flex ;
     flex-direction: column;

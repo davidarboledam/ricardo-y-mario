@@ -66,8 +66,17 @@
     flex-direction: column;
 }
 
+
+
 .residentcard__item span:first-child{
-    padding-left: 20px;
+    padding-left: 10px;
     font-weight: 400;
-    color: #999;
+    color: #f0efef;
+}
+
+.residentcard__item span:last-child{
+    padding-left: 20px;
+    padding-top: 2px;
+    font-weight: 400;
+    color: #717070;
 }
